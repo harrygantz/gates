@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 23045361599101836}
   - component: {fileID: 135320312710969944}
   - component: {fileID: 114900801802337608}
+  - component: {fileID: 54112587719025766}
   m_Layer: 0
   m_Name: NormalBee
-  m_TagString: Untagged
+  m_TagString: Bee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102669299491066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.53, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,6 +86,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102669299491066}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54112587719025766
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1102669299491066}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &114900801802337608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d8ee441bf26d046aa335d90a6232e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 6
 --- !u!135 &135320312710969944
 SphereCollider:
   m_ObjectHideFlags: 1

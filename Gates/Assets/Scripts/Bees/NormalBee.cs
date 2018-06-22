@@ -5,25 +5,27 @@ using UnityEngine;
 public class NormalBee : MonoBehaviour {
 
     GameObject Bee;
-    GameManager _gameManager;
     private bool movingRight;
     private bool colision;
     public float speed = 2.0f;
 
-    void Start ()
+    private void Start ()
     {
         Bee = GetComponent<GameObject>();
-        _gameManager = GameManager.GM;
-	}
+        movingRight = true;
+    }
 	
 
-	void Update ()
+	private void Update ()
     {
         if (movingRight)
             transform.Translate(Vector3.right * speed * Time.deltaTime);
         if(transform.position.x >= 12.0f)
         {
-            _gameManager.points = _gameManager.points + 1;
+            Debug.Log("Points Should Increase");
+            GameManager.Gm.SetPoints(1);
+            Destroy(gameObject);
         }
 	}
+
 }

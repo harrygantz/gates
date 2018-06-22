@@ -5,30 +5,13 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    //[Serializable]
-    //public class Count
-    //{
-    //    public int minimum;
-    //    public int maximum;
-
-    //    public Count (int min, int max)
-    //    {
-    //        minimum = min;
-    //        maximum = max;
-    //    }
-    //}
-
-    public GameObject[] Bees;
-    public GameObject[] Wasps;
-
-	void Start ()
-    {
-		
-	}
 	
-
-	void Update ()
-    {
-		
-	}
+	//Objectives
+    public GameObject[] Bees;
+    
+	//Enemies
+	public GameObject[] Wasps;
+	
+	//Spawn Points
+	public Transform[] spawnPoints;
 }
